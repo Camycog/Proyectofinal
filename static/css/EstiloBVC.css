@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url('../img/Fondo_web.png');
+    background-size: 100%;
+    background-size: cover;
+}
+.controls {
+    width: 100%;
+    border: 1px solid #017bab;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #252323;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+.buttons {
+    width: 100%;
+    height: 40px;
+    background: #017bab;
+    border: none;
+    text-align: center;
+    color: white;
+    margin-bottom: 16px;
+}
+.buttons_index {
+    width: 30%;
+    height: 40px;
+    background: #8f9091;
+    border: none;
+    text-align: center;
+    color: white;
+    margin-bottom: 8px;
+    margin-left: 35%; 
+}
+h1,h2,h3,h4,h5 {
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    font-size:  20px;
+    color: whitesmoke;
+}
+.p{
+    height: 40px;
+    text-align: left;
+}
+.img{
+    width: 10%;
+    text-align: left;
+    background: #4e4d4d;
+}
+.a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.a:hover{
+    text-decoration-style: underline;
+}
+/*---------------------------*/
+.form-login {
+    width: 400px;
+    height: 360px;
+    background: #4e4d4d;
+    margin: auto;
+    margin-top: 180px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: 4px solid #017bab;
+    color: white;
+}
+.form-login p{
+    height: 40px;
+    text-align: right;
+}
+/*---------------*/
+.error{
+    color: red;
+    font-style: italic;
+}
+
+.form-recup {
+    width: 400px;
+    height: 360px;
+    background: #4e4d4d;
+    margin: auto;
+    margin-top: 180px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: 4px solid #017bab;
+    color: white;
+}
+/*---------------*/
+.form-registro {
+    width: 400px;
+    height: 520px;
+    background: #4e4d4d;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: 4px solid #017bab;
+    color: white;
+}
+/*---------------*/
+.form-registro_msj {
+    width: 400px;
+    height: 420px;
+    background: #4e4d4d;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: 4px solid #017bab;
+    color: white;
+}
+/*---------------*/
+.form-kpop p{
+    height: 50px;
+    text-align: left;
+    border-bottom: 1px solid;
+}
+/*---------------*/
+.form-encuesta {
+    width: 500px;
+    height: 570px;
+    background: #4e4d4d;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: 4px solid #017bab;
+    color: white;
+}
+.modal-content {
+    background: #4e4d4d;
+}
+.modal-content{
+    background-color: #4e4d4d;
+}
