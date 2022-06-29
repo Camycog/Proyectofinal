@@ -1,4 +1,4 @@
 from django.contrib import admin
-from .models import Post
+from .models import Genero
 
-admin.site.register(Musica)
+admin.site.register(Genero)
