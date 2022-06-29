@@ -12,19 +12,17 @@ class Cancion(models.Model):
     genero = models.ForeignKey(Genero, on_delete = models.DO_NOTHING)
     artista = models.CharField(max_length=100)
     duracion = models.IntegerField()
-    
+   
     def __str__(self):
         return self.nombre
 
 class Artista(models.Model):
     nombre = models.CharField(max_length=100)
     nombre_artistico = models.CharField(max_length=100, )
-
     def __str__(self):
         return self.nombre_artistico
     
 class Album(models.Model):
-    nombre_album = models.CharField(max_length=100)
-        
+    nombre_album = models.CharField(max_length=100)       
     def __str__(self):
         return self.nombre_album

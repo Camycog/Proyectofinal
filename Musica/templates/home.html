@@ -7,7 +7,7 @@
   Bienvenido {{ user.username }}!
   <p><a href="{% url 'logout' %}">Log Out</a></p>
 {% else %}
-  <p>Inicia sesion para continuar</p>
+  <p>Inicia sesion</p>
   <a href="{% url 'login' %}">Log In</a>
 {% endif %}
 {% endblock %}
