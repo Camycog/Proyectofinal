@@ -2,5 +2,7 @@
 <body>
     <p>Llamando a la pagina</p>
     <p>Este es solo un intento hay que puro darle</p>
-</body>
+    {% for cancion in cancions %}
+    <div> {{ cancion }} </div>
+    {% endfor %}
 </html>

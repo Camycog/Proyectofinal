@@ -19,7 +19,7 @@ class Cancion(models.Model):
 
 class Artista(models.Model):
     nombre = models.CharField(max_length=100)
-    nombre_artistico = models.CharField(max_length=100)
+    nombre_artistico = models.CharField(max_length=100, )
 
     def __str__(self):
         return self.nombre_artistico
