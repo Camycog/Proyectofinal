@@ -2,43 +2,48 @@
 
 {% extends 'app/base.html'%}
 {% block contenido %}
+{% load static %}
+<form id="encuesta" action="paginaprincipal.html">
+    <section class="form-encuesta">
+        <h3 style="text-align:center;">¿Cuál es tu género favorito?</h3>
+        <input class="form-control" type="text" name="nombre" placeholder="Nombre"> <br>
+        <input class="form-control" type="text" name="apellido" placeholder="Apellido"> <br>
+        <select name='nombreIntengrante' required>
+            <option selected disabled>Sel. una opción</option>
+            <option>70's</option>
+            <option>80's</option>
+            <option>90's</option>
+            <option>2000's</option>
+            <option>Jazz</option>
+            <option>Rock</option>
+            <option>Pop</option>
+            <option>Rap</option>
+            <option>Country</option>
+            <option>Metal</option>
+            <option>Folk</option>
+            <option>Salsa</option>
+            <option>Reggaeton</option>
+            <option>Dance</option>
+            <option>Reggae</option>
+            <option>Punk Rock</option>
+            <option>K-Pop</option>
+            <option>Electronic</option>
+            <option>Merengue</option>
+            <option>Rock&Roll</option>
+        </select> <br> <br>
+        <input style="text-align:center;" class="form-control" type="text" name="razon" placeholder="Razón">
+        <br>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+        <br>
+        <a class="btn btn-secondary" href="{% url 'home' %}" role="button">Guardar</a>                
 
-<div class="form-registro">
-    <div class = "">
-        <div class = "panel panel-primary">
-            <div class = "panel-heading">
-                 <h5>REGISTO USUARIO</h5>
-            </div>
-                <form id = "registro" action="msj_registro.html">
-                <input type = "text" class = "form-control" name = "username2" placeholder = "Usuario"/>        
-                <br/> 
-                <input type = "text" class = "form-control" name = "email" placeholder = "Email"/>
-                <br/>
-                <input type = "password" class = "form-control" name = "password2" placeholder = "Contraseña" id = "password"/> 
-                <br/>
-                <input type = "password" class = "form-control" name = "confirm" placeholder = "confirme contraseña" id = "confirme"/> 
-                <br/>
-                <div class = "musica">
-                    <div class = "panel-heading">Escoja su musica favorita</div>
-                    <label class="checkbox-inline"><input type="checkbox" name = "musica"> Musica por decadas</label>
-                    <label class="checkbox-inline"><input type="checkbox" name = "musica"> Rock</label>
-                    <label class="checkbox-inline"><input type="checkbox" name = "musica"> Metal</label>
-                    <label class="checkbox-inline"><input type="checkbox" name = "musica"> Pop</label>
-                    <label class="checkbox-inline"><input type="checkbox" name = "musica"> Reggaeton</label>
-                    <label class="checkbox-inline"><input type="checkbox" name = "musica"> Latina</label>
-                    <label class="checkbox-inline"><input type="checkbox" name = "musica"> K-pop</label>
-                    <label class="checkbox-inline"><input type="checkbox" name = "musica"> Electronica</label>                      
-                </div>
-                <br/>                    
-                <a href="usuarioverificado.html"><button type = "submit" class = "btn btn-primary">Registrar</button></a>                                 
-                </form>
-            <br/>        
-        </div>
-    </div>
-    <a href="paginaprincipal.html"><img src="./img/home.svg" alt="Volver"> </a>
-</div>                
+
+        <p style="text-align:center;"> <img src="{% static 'app/img/homer.gif' %}" width=150 height=150 ></p>            
+    </section>
+</form>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="./js/register.js"></script>       
+<script src="./js/register.js"></script>
 {% endblock %}
