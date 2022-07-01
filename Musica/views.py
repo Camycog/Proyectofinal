@@ -33,8 +33,6 @@ def signin2(request):
 def reproductor(request):
     return render(request, 'app/reproductor.html')    
 
-def relajacion(request):
-    return render(request, 'app/relajacion.html')  
 
 def registro(request):
     data= {
@@ -53,3 +51,5 @@ def registro(request):
 
     return render(request, 'registration/registro.html', data)
 
+def gatito(request):
+    return render(request, 'app/gatito.html')  
