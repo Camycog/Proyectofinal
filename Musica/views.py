@@ -50,6 +50,3 @@ def registro(request):
 
 
     return render(request, 'registration/registro.html', data)
-
-def gatito(request):
-    return render(request, 'app/gatito.html')  
