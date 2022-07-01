@@ -26,6 +26,9 @@ def signin2(request):
 def reproductor(request):
     return render(request, 'app/reproductor.html')    
 
+def relajacion(request):
+    return render(request, 'app/relajacion.html')  
+
 def registro(request):
     data= {
         'form': CustomUserCreationForm()

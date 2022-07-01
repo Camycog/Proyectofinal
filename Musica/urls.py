@@ -1,6 +1,6 @@
 from django.db import router
 from django.urls import path, include
-from .views import home, signin, signin2, registro, reproductor
+from .views import home, signin, signin2, registro, reproductor, relajacion
 from .views import CancionViewset
 from rest_framework import routers
 
@@ -14,5 +14,7 @@ urlpatterns = [
     path('signin2/', signin2, name="signin2"),
     path('reproductor/', reproductor, name="reproductor"),
     path('registro/', registro, name="registro"),
+    path('relajacion/', registro, name="relajacion"),
+
     path('api/', include(router.urls)),
 ]
