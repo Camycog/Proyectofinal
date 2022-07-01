@@ -1,0 +1,10 @@
+h5 {
+    color:white;
+}
+#bg {
+    background-image: url('../img/Fondo_web.png');
+    background-size: cover;
+    background-repeat:no-repeat ;
+
+    
+}
