@@ -2,9 +2,7 @@
 {% extends 'app/base.html'%}
 {% block contenido %}
 
-
-
-
+{% load static %}
 <!doctype html>
 <html lang="es">
 <head>
@@ -14,6 +12,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <title>Registro de Usuario</title>
   {% load crispy_forms_tags %}
+  <link rel="stylesheet" href="{% static 'app/css/Style.css' %}">
 </head>
 <body>
   <br>
