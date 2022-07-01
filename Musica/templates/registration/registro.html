@@ -21,12 +21,13 @@
             <form action="" method="post">
                 {% csrf_token %}
                 {{ form | crispy }}
-                <div class="d-flex justify-content-end">
-                <a class="text-nowrap" href="{% url 'home' %}">Volver</a>
-                
-                <a class="text-nowrap" href="{% url 'login' %}">Iniciar sesion</a>
-                <br>
-                <input type="submit" value="Registrar" class="btn btn-secondary float-right" >
+                <br>    
+                <div class="d-flex justify-content-center">
+                <ul>
+                <a class="btn btn-secondary" href="{% url 'home' %}" role="button">Volver</a>                
+                <a class="btn btn-secondary"href="{% url 'login' %}" role="button">Iniciar sesion</a>
+                <input type="submit" value="Registrar" class="btn btn-secondary" >
+              </ul>
               </div>
             </form>
           </div>

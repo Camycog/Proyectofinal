@@ -22,10 +22,12 @@
             <form action="" method="post">
                 {% csrf_token %}
                 {{ form | crispy }}
+                <br>                
                 <div class="d-flex justify-content-end">
-                <a class="nav-link text-nowrap" href="{% url 'home' %}">Volver</a>
-                <br>
+                <ul>
+                <a class="btn btn-secondary" href="{% url 'home' %}" role="button">Volver</a>              
                 <input type="submit" value="Ingresar" class="btn btn-secondary float-right" >
+                </ul>
               </div>
             </form>
           </div>
