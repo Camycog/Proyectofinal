@@ -4,7 +4,14 @@ h5 {
 #bg {
     background-image: url('../img/Fondo_web.png');
     background-size: cover;
-    background-repeat:no-repeat ;
+    background-repeat:no-repeat ;    
+}
 
-    
+#logincard {
+    background-color: #282828;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
 }
