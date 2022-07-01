@@ -46,7 +46,7 @@
   <button type="button" class="btn btn-primary bg-black" data-bs-toggle="modal" data-bs-target="#myModalMetal">
     <img src="{% static 'app/img/Metal.jpg' %}" width="150" height="150" />
   </button>
-  <div class="modal">
+  <div class="modal" id="myModalMetal">
     <div class="modal-dialog modal-lg bg-black">
       <div class="modal-content bg-black">
         <div class="modal-header bg-black">
@@ -62,10 +62,10 @@
       </div>
     </div>
   </div>
-  <button type="button" class="btn btn-primary bg-black" data-bs-toggle="modal" data-bs-target="#myModal">
+  <button type="button" class="btn btn-primary bg-black" data-bs-toggle="modal" data-bs-target="#myModalKpop">
     <img src="{% static 'app/img/Kpop.jpg' %}" width="150" height="150" />
   </button>
-  <div class="modal" id="myModal90s">
+  <div class="modal" id="myModalKpop">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
@@ -81,10 +81,10 @@
       </div>
     </div>
   </div>
-  <button type="button" class="btn btn-primary bg-black" data-bs-toggle="modal" data-bs-target="#myModal">
+  <button type="button" class="btn btn-primary bg-black" data-bs-toggle="modal" data-bs-target="#myModalLatina">
     <img src="{% static 'app/img/Latino.png' %}" width="150" height="150" />
   </button>
-  <div class="modal" id="myModal2000">
+  <div class="modal" id="myModalLatina">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
@@ -100,7 +100,7 @@
       </div>
     </div>
   </div>
-    <button type="button" class="btn btn-primary bg-black" data-bs-toggle="modal" data-bs-target="#myModal">
+    <button type="button" class="btn btn-primary bg-black" data-bs-toggle="modal" data-bs-target="#myModalJazz">
       <img src="{% static 'app/img/jazz.jpg' %}" width="150" height="150" />
     </button>
     <div class="modal" id="myModalJazz">
@@ -124,10 +124,10 @@
     <div class="banner">
       <div class="cancion">
         <div class="container mt-3">
-          <button type="button" class="btn btn-primary bg-black" data-bs-toggle="modal" data-bs-target="#myModal">
+          <button type="button" class="btn btn-primary bg-black" data-bs-toggle="modal" data-bs-target="#myModalreggae">
             <img src="{% static 'app/img/reggae.PNG' %}" width="150" height="150" />
           </button>
-          <div class="modal" id="myModal">
+          <div class="modal" id="myModalreggae">
             <div class="modal-dialog modal-lg bg-black">
               <div class="modal-content bg-black">
                 <div class="modal-header bg-black">
@@ -144,10 +144,10 @@
               </div>
             </div>
           </div>
-          <button type="button" class="btn btn-primary bg-black" data-bs-toggle="modal" data-bs-target="#myModal">
+          <button type="button" class="btn btn-primary bg-black" data-bs-toggle="modal" data-bs-target="#myModalRomance">
             <img src="{% static 'app/img/romance.PNG' %}" width="150" height="150" />
           </button>
-          <div class="modal" id="myModal">
+          <div class="modal" id="myModalRomance">
             <div class="modal-dialog modal-lg bg-black">
               <div class="modal-content bg-black">
                 <div class="modal-header bg-black">
@@ -164,10 +164,10 @@
               </div>
             </div>
           </div>
-          <button type="button" class="btn btn-primary bg-black" data-bs-toggle="modal" data-bs-target="#myModal">
+          <button type="button" class="btn btn-primary bg-black" data-bs-toggle="modal" data-bs-target="#myModalClasica">
             <img src="{% static 'app/img/clasica.PNG' %}" width="150" height="150" />
           </button>
-          <div class="modal" id="myModal">
+          <div class="modal" id="myModalClasica">
             <div class="modal-dialog modal-lg bg-black">
               <div class="modal-content bg-black">
                 <div class="modal-header bg-black">
@@ -184,14 +184,14 @@
               </div>
             </div>
           </div>
-          <button type="button" class="btn btn-primary bg-black" data-bs-toggle="modal" data-bs-target="#myModal">
+          <button type="button" class="btn btn-primary bg-black" data-bs-toggle="modal" data-bs-target="#myModalTv">
             <img src="{% static 'app/img/tv.PNG' %}" width="150" height="150" />
           </button>
-          <div class="modal" id="myModal">
+          <div class="modal" id="myModalTv">
             <div class="modal-dialog modal-lg bg-black">
               <div class="modal-content bg-black">
                 <div class="modal-header bg-black">
-                  <h4 class="modal-title">Un mix de musica por decadas</h4>
+                  <h4 class="modal-title">Musica de tus peliculas favoritas</h4>
                   <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body bg-black">
@@ -204,14 +204,14 @@
               </div>
             </div>
           </div>
-          <button type="button" class="btn btn-primary bg-black" data-bs-toggle="modal" data-bs-target="#myModal">
+          <button type="button" class="btn btn-primary bg-black" data-bs-toggle="modal" data-bs-target="#myModalViaje">
             <img src="{% static 'app/img/viaje.PNG' %}" width="150" height="150" />
           </button>
-          <div class="modal" id="myModal">
+          <div class="modal" id="myModalViaje">
             <div class="modal-dialog modal-lg bg-black">
               <div class="modal-content bg-black">
                 <div class="modal-header bg-black">
-                  <h4 class="modal-title">Un mix de musica por decadas</h4>
+                  <h4 class="modal-title">Para andar por carretera</h4>
                   <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body bg-black">
@@ -226,10 +226,10 @@
           </div>
          
           </div>
-          <button type="button" class="btn btn-primary bg-black" data-bs-toggle="modal" data-bs-target="#myModal">
+          <button type="button" class="btn btn-primary bg-black" data-bs-toggle="modal" data-bs-target="#myModalGaming">
             <img src="{% static 'app/img/gaming.PNG' %}" width="150" height="150" />
           </button>
-          <div class="modal" id="myModalRock">
+          <div class="modal" id="myModalGaming">
             <div class="modal-dialog modal-lg">
               <div class="modal-content bg-black">
                 <div class="modal-header bg-black">
@@ -246,7 +246,7 @@
               </div>
             </div>
           </div>
-          <button type="button" class="btn btn-primary bg-black" data-bs-toggle="modal" data-bs-target="#myModal">
+          <button type="button" class="btn btn-primary bg-black" data-bs-toggle="modal" data-bs-target="#myModalRock">
             <img src="{% static 'app/img/rock.png' %}" width="150" height="150" />
           </button>
           <div class="modal" id="myModalRock">
