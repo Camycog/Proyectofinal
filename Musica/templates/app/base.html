@@ -50,6 +50,11 @@
                 <a class="nav-link text-nowrap" href="{% url 'logout' %}">Cerrar sesion</a>
               </li>
               {% else %}
+              <li>
+                <a class="nav-link text-nowrap" href="{% url 'home' %}">Home</a>
+              </li> 
+              <a class="nav-link text-nowrap" href="{% url 'relajate' %}">Relajate</a>
+              </li> 
                 <a class="nav-link text-nowrap" href="{% url 'login' %}">Iniciar sesion</a>
               <li>
                 <a class="nav-link text-nowrap" href="{% url 'registro' %}">Registrate</a>
