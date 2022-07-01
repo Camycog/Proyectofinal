@@ -3,6 +3,7 @@ from email import message
 from django.shortcuts import redirect, render
 from .forms import CustomUserCreationForm
 from django.http import Http404
+from django.contrib import messages
 from django.contrib.auth import authenticate, login
 # Create your views here.
 

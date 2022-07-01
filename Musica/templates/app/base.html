@@ -66,6 +66,12 @@
 
     <br>
   </div>
+  {% if messages %}
+    {% for m  in messages %}
+    {{m}}
+    {% endfor %}
+  {%  endif %}
+
   {% block contenido %}
   {% endblock %}
 
