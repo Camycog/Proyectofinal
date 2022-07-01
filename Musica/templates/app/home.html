@@ -1,15 +1,16 @@
+
 {% extends 'app/base.html'%}
-
 {% block contenido %}
-
+{% load static %}
 <div class="container">
+
     <br>
     <h5> GENEROS MÁS ESCUCHADOS EN EL 2022 </h5>
     <div class="banner">
       <div class="cancion">
         <div class="container mt-3">
           <button type="button" class="btn btn-primary bg-black" data-bs-toggle="modal" data-bs-target="#myModal">
-            <img src="img/decadas.png" width="150" height="150" />
+            <img src={% static "img/decadas.png" %} width="150" height="150" />
           </button>
           <div class="modal" id="myModal">
             <div class="modal-dialog modal-lg bg-black">
