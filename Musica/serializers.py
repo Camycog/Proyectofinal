@@ -1,6 +1,6 @@
 from asyncore import read
 from dataclasses import fields
-from .models import Cancion, Genero
+from .models import Artista, Cancion, Genero,Album
 from rest_framework import serializers
 
 class GeneroSerializer (serializers.ModelSerializer):
@@ -12,4 +12,14 @@ class GeneroSerializer (serializers.ModelSerializer):
 class CancionSerializer (serializers.ModelSerializer):
     class Meta:
         model = Cancion
+        fields = '__all__'
+        
+class AetistaSerializer (serializers.ModelSerializer):
+    class Meta:
+        model = Artista
+        fields = '__all__'
+        
+class AlbumSerializer (serializers.ModelSerializer):
+    class Meta:
+        model = Album
         fields = '__all__'
