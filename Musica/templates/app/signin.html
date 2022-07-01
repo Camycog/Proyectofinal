@@ -1,0 +1,63 @@
+
+
+{% extends 'app/base.html'%}
+{% block contenido %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=        <form action="" class="formulario_registro" id="formulario_registro">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="tu@email.cl">
+        <br>
+        <label for="telefono">Telefono</label>
+        <input type="number" name="telefono" id="telefono">
+        <br>
+        <label for="tipoconsulta">Tipo consulta</label>
+        <select name="tipoconsulta" id="tipoconsulta">
+            <option value="">seleccionar</option>
+            <option value="consulta">consulta</option>
+            <option value="reclamo">reclamo</option>
+            <option value="sugerencia">sugerencia</option>
+            <option value="felicitaciones">felicitaciones</option>
+        </select>
+        <br>
+        <label for="mensaje">Mensaje</label>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+        <br>
+        <input type="checkbox" name="avisos" id="avisos" checked>
+        <label for="avisos">¿Desea recibir promociones/avisos a su email?</label>
+        <br>
+        <!--
+        
+        <label for="">Sexo</label>
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="sexo" id="masculino" checked>
+        <label for="femenino">Femenino</label>
+        <input type="radio" name="sexo" id="femenino">
+
+        <br>
+        
+        <label for="fechanacimiento">Fecha nacimiento</label>
+        <input type="date" name="fechanacimiento" id="fechanacimiento">
+        <br>
+        <label for="color">Color</label>
+        <input type="color" name="color" id="color">
+        
+        <br>
+        <input type="datetime-local" name="" id="">-->
+
+        <button type="button" id="btnEnviar" class="button">Enviar</button>
+        
+
+    </form>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+{% endblock %}
