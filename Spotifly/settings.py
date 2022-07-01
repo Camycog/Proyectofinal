@@ -44,7 +44,9 @@ INSTALLED_APPS = [
     'Musica',
     "colorfield",
     'crispy_forms',
-    'rest_framework'
+    'rest_framework',
+    'tailwind',
+    'theme',
 ]
 CRISPY_TEMPLATE_PACK = 'bootstrap'
 X_FRAME_OPTIONS = "SAMEORIGIN"
