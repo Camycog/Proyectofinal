@@ -14,6 +14,13 @@ class CancionViewset(viewsets.ModelViewSet):
     queryset = Cancion.objects.all()
     serializer_class = CancionSerializer
 
+    def get_queryset(self):
+        cancion = Cancion.objects.all()
+        nombre = self.request.GET.get('nombre')
+        if nombre:
+            cancion = cancion.filter(nombre__contains="nombre")
+        return cancion
+
 def home(request):
     return render(request, 'app/home.html')
 
