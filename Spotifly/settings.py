@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 from telnetlib import LOGOUT
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -46,6 +47,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'rest_framework',
     'tailwind',
+
 ]
 CRISPY_TEMPLATE_PACK = 'bootstrap'
 X_FRAME_OPTIONS = "SAMEORIGIN"
@@ -135,8 +137,10 @@ STATIC_ROOT = (BASE_DIR, 'static')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-import os
+
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "Media")
 
+# Tailwind
+TAILWIND_APP_NAME = 'theme'
