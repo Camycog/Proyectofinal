@@ -1,0 +1,44 @@
+
+
+{% extends 'app/base.html'%}
+{% block contenido %}
+
+<div class="form-registro">
+    <div class = "">
+        <div class = "panel panel-primary">
+            <div class = "panel-heading">
+                 <h5>REGISTO USUARIO</h5>
+            </div>
+                <form id = "registro" action="msj_registro.html">
+                <input type = "text" class = "form-control" name = "username2" placeholder = "Usuario"/>        
+                <br/> 
+                <input type = "text" class = "form-control" name = "email" placeholder = "Email"/>
+                <br/>
+                <input type = "password" class = "form-control" name = "password2" placeholder = "Contraseña" id = "password"/> 
+                <br/>
+                <input type = "password" class = "form-control" name = "confirm" placeholder = "confirme contraseña" id = "confirme"/> 
+                <br/>
+                <div class = "musica">
+                    <div class = "panel-heading">Escoja su musica favorita</div>
+                    <label class="checkbox-inline"><input type="checkbox" name = "musica"> Musica por decadas</label>
+                    <label class="checkbox-inline"><input type="checkbox" name = "musica"> Rock</label>
+                    <label class="checkbox-inline"><input type="checkbox" name = "musica"> Metal</label>
+                    <label class="checkbox-inline"><input type="checkbox" name = "musica"> Pop</label>
+                    <label class="checkbox-inline"><input type="checkbox" name = "musica"> Reggaeton</label>
+                    <label class="checkbox-inline"><input type="checkbox" name = "musica"> Latina</label>
+                    <label class="checkbox-inline"><input type="checkbox" name = "musica"> K-pop</label>
+                    <label class="checkbox-inline"><input type="checkbox" name = "musica"> Electronica</label>                      
+                </div>
+                <br/>                    
+                <a href="usuarioverificado.html"><button type = "submit" class = "btn btn-primary">Registrar</button></a>                                 
+                </form>
+            <br/>        
+        </div>
+    </div>
+    <a href="paginaprincipal.html"><img src="./img/home.svg" alt="Volver"> </a>
+</div>                
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="./js/register.js"></script>       
+{% endblock %}
