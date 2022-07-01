@@ -7,7 +7,7 @@ h5 {
     background-repeat:no-repeat ;    
 }
 
-#logincard {
+#logincard, #registrocard {
     background-color: #282828;
     text-decoration: none;
     color: white;
@@ -15,3 +15,4 @@ h5 {
     display: flex;
     align-items: center;
 }
+
