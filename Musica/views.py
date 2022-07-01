@@ -1,11 +1,18 @@
 
 from email import message
+from .models import Cancion, Album, Genero 
 from django.shortcuts import redirect, render
 from .forms import CustomUserCreationForm
 from django.http import Http404
 from django.contrib import messages
 from django.contrib.auth import authenticate, login
+from rest_framework import viewsets
+from .serializers import CancionSerializer
 # Create your views here.
+
+class CancionViewset(viewsets.ModelViewSet):
+    queryset = Cancion.objects.all()
+    serializer_class = CancionSerializer
 
 def home(request):
     return render(request, 'app/home.html')
@@ -15,6 +22,9 @@ def signin(request):
 
 def signin2(request):
     return render(request, 'app/signin2.html')
+
+def reproductor(request):
+    return render(request, 'app/reproductor.html')    
 
 def registro(request):
     data= {
@@ -32,3 +42,4 @@ def registro(request):
 
 
     return render(request, 'registration/registro.html', data)
+
