@@ -44,7 +44,7 @@
                 <li class="nav-item">  
               {% if user.is_authenticated %}
               <li>
-                <a class="nav-link text-nowrap" href="#">Bienvenido {{ user.username }}</a>
+                <a class="nav-link text-nowrap" href="#">Hola, {{ user.username }}</a>
               </li>
               <li>
                 <a class="nav-link text-nowrap" href="{% url 'logout' %}">Cerrar sesion</a>
