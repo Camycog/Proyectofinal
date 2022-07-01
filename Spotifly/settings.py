@@ -46,7 +46,6 @@ INSTALLED_APPS = [
     'crispy_forms',
     'rest_framework',
     'tailwind',
-    'theme',
 ]
 CRISPY_TEMPLATE_PACK = 'bootstrap'
 X_FRAME_OPTIONS = "SAMEORIGIN"
