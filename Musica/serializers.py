@@ -14,7 +14,7 @@ class CancionSerializer (serializers.ModelSerializer):
         model = Cancion
         fields = '__all__'
         
-class AetistaSerializer (serializers.ModelSerializer):
+class ArtistaSerializer (serializers.ModelSerializer):
     class Meta:
         model = Artista
         fields = '__all__'
