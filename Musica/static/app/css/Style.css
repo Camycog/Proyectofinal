@@ -6,13 +6,3 @@ h5 {
     background-size: cover;
     background-repeat:no-repeat ;    
 }
-
-#logincard, #registrocard {
-    background-color: #282828;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-}
-
