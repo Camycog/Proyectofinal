@@ -1,3 +1,5 @@
+from datetime import datetime
+from time import time
 from django.db import models
 
 # Create your models here.
@@ -11,8 +13,8 @@ class Cancion(models.Model):
     nombre = models.CharField(max_length=100)
     genero = models.ForeignKey(Genero, on_delete = models.DO_NOTHING)
     artista = models.CharField(max_length=100)
-    duracion = models.IntegerField()
-   
+    duracion = models.IntegerField(max_length= 5)
+
     def __str__(self):
         return self.nombre
 
@@ -23,6 +25,8 @@ class Artista(models.Model):
         return self.nombre_artistico
     
 class Album(models.Model):
-    nombre_album = models.CharField(max_length=100)       
+    nombre_album = models.CharField(max_length=100)
+
+
     def __str__(self):
-        return self.nombre_album
+        return self.nombre_album 
