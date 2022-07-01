@@ -14,7 +14,6 @@ urlpatterns = [
     path('signin2/', signin2, name="signin2"),
     path('reproductor/', reproductor, name="reproductor"),
     path('registro/', registro, name="registro"),
-    path('relajacion/', registro, name="relajacion"),
-
+    path('relajacion/', relajacion, name="relajacion"),
     path('api/', include(router.urls)),
 ]
