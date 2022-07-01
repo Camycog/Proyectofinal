@@ -42,9 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Musica',
     "colorfield",
-
-
+    'crispy_forms',
 ]
+CRISPY_TEMPLATE_PACK = 'bootstrap'
 X_FRAME_OPTIONS = "SAMEORIGIN"
 
 
