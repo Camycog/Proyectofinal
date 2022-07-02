@@ -23,13 +23,13 @@
       <div class="col-12 col-md-4 offset-md-3">
         <div class="card">
           <div class="card-body">
-            <h2>Iniciar Sesion</h2>
+            <h3 style="text-align:center;">¿Cuál es tu género favorito?</h3>
             <hr>
             <form action="" method="post">
                 <form id="encuesta" action="paginaprincipal.html">
                     {% load crispy_forms_tags %}
                     <section class="form-encuesta"style="text-align:center;">
-                        <h3 style="text-align:center;">¿Cuál es tu género favorito?</h3>
+ 
                         <input class="form-control" type="text" name="nombre" placeholder="Nombre"> <br>
                         <input class="form-control" type="text" name="apellido" placeholder="Apellido"> <br>
                         <select name='nombreIntengrante' required>
@@ -55,15 +55,13 @@
                             <option>Merengue</option>
                             <option>Rock&Roll</option>
                         </select> <br> <br>
-                        <input style="text-align:center;" class="form-control" type="text" name="razon" placeholder="Razón">
-                        <br>
+                        <h4>Razón:</h4>
                         <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
                         <br>
                 
                         {% csrf_token %}
-                        {{ form | crispy }}             
-                        <a class="btn btn-secondary" href="{% url 'home' %}" role="button">Guardar</a>   
-                
+                        {{ form | crispy }}               
+                        <br>                
                         <p style="text-align:center;"> <img src="{% static 'app/img/homer.gif' %}" width=150 height=150 ></p>            
                     </section>
                 </form>
@@ -74,7 +72,7 @@
                 <br>                
                 <div class="d-flex justify-content-end">
                 <ul>            
-                <input type="submit" value="Ingresar" class="btn btn-secondary float-right" >
+                <a class="btn btn-secondary" href="{% url 'home' %}" role="button">Guardar</a> 
                 </ul>
               </div>
             </form>
