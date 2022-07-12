@@ -1,6 +1,6 @@
 from django.db import router
 from django.urls import path, include
-from .views import home, signin, signin2, registro, reproductor, agregar_cancion
+from .views import home, signin, signin2, registro, reproductor, agregar_cancion 
 from .views import CancionViewset
 from rest_framework import routers
 

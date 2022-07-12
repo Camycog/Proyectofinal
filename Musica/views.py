@@ -56,4 +56,12 @@ def agregar_cancion(request):
     data= {
         'form': CancionForm()
     }
+    if request.method =='POST':
+        formulario=CancionForm(data=request.POST,files=request.FILES)
+        if formulario.is_valid():
+            formulario.save()
+            data["mensaje"]="Guardado Correctamente"
+        else:
+            data["form"]=formulario
     return render(request, 'app/agregar.html',data)
+

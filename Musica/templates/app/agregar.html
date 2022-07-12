@@ -11,17 +11,19 @@
                 <div class="card-body">
                     <h4> <div style="text-align: center;"> Nueva Cancion </h4>
                     <hr>
-    
+                    <br>
             <form action="" method="post">
                 {% csrf_token %}
                 {{form | crispy}}
-
-                <div class="d-flex justify-content-end">
-                    <imput type="reset" values="Cancelar" class="btn btn-secondary">
-                        <br>
-                    <imput type="submit" values="Guardar" class="btn btn-primary">
-                <div>
+                
+                    <div class="d-flex justify-content-center">
+                        <ul>
+                        <input type="reset" value="Cancelar" class="btn btn-secondary" >
+                        <input type="submit" value="Guardar" class="btn btn-primary" >
+                      </ul>
+                      </div>
             <form>
+            {{mensaje}}
         <div>
     <div>
  
