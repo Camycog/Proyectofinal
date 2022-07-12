@@ -8,6 +8,7 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, login
 from rest_framework import viewsets
 from .serializers import CancionSerializer
+from .forms import CancionForm
 # Create your views here.
 
 class CancionViewset(viewsets.ModelViewSet):
@@ -50,3 +51,9 @@ def registro(request):
 
 
     return render(request, 'registration/registro.html', data)
+
+def agregar_cancion(request):
+    data= {
+        'form': CancionForm()
+    }
+    return render(request, 'app/agregar.html',data)
